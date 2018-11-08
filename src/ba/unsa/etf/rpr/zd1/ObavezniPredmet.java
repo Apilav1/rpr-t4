@@ -9,9 +9,7 @@ public class ObavezniPredmet extends Predmet{
     protected void finalize() throws Throwable {
         super.finalize();
     }
-    public void upisiStudenta(String ime){}
-    public void ispisStudenata(){}
+
     public int getZaSemestar(){return zaSemestar;}
-    public void setZaSemestar(int semestar){this.zaSemestar = semestar;}
-    public void obrisiStudenta(Student naziv){}
+    public void setZaSemestar(int semestar){zaSemestar = semestar;}
 }
