@@ -1,18 +1,20 @@
 package ba.unsa.etf.rpr.zd1;
 
-public class IzborniPredmet {
+public class IzborniPredmet extends Predmet{
     Student[] nizStudenata;
-    public IzborniPredmet(){}
+
+    public IzborniPredmet(String p, int etcc){
+        super(p, etcc);
+    }
     int zaSemestar;
     @Override
     protected void finalize() throws Throwable {
         super.finalize();
     }
-    public void upisiStudenta(String ime){
-
+    public int getZaSemestar(){
+        return zaSemestar;
     }
-    public void ispisStudenata(){}
-    public int getZaSemestar(){return zaSemestar;}
-    public void setZaSemestar(int semestar){this.zaSemestar = semestar;}
-    public void obrisiStudenta(Student naziv){}
+    public void setZaSemestar(int semestar){
+        this.zaSemestar = semestar;
+    }
 }
